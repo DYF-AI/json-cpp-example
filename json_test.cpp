@@ -17,6 +17,11 @@ int demo1_write(){
 
     std::cout << "js: " << js << std::endl;
 
+    // save json file
+    std::ofstream json_file("github.json");
+    json_file << js << std::endl;
+    json_file.close();
+
     return 0;
 }
 
